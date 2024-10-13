@@ -3,17 +3,19 @@ let links = document.querySelectorAll(`a`)
 let section = document.querySelectorAll(`section`)
 
 //Loop through the links and make them clickable
-for(let i=0; i<links.length; i++)
-{
-    links[i].addEventListener(`click`, function(e){
+for(let i=0; i<links.length; i++){
+    if(i <= 2){
+        links[i].addEventListener(`click`, function(e){
+            
+            e.preventDefault();
 
-        e.preventDefault();
-        //add a class to every section that hides them
-        for(let ii=0; ii<section.length; ii++)
-        {
-            section[ii].classList.add(`hide`)
-        }
-        //remove the hide class from 
-        section[i].classList.remove(`hide`)
-    })
+            //add a class to every section that hides them
+            for(let ii=0; ii<section.length; ii++)
+            {
+                section[ii].classList.add(`hide`)
+            }
+            //remove the hide class from 
+            section[i].classList.remove(`hide`)
+        })
+    }
 }
