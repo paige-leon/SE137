@@ -1,22 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+        Paige Leon
+        SE111
+        08/8/24
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paige Leon Bio</title>
+    <meta name = "author" content = "Paige Leon">
+    <meta name = "description" content = "Paige Leon Bio">
+    <title>Bio Home</title>
 </head>
+<style>
+    body{
+        margin: 0px
+    }
+    #wrapper{
+        background-color: grey;
+    }
+    #header, #footer{
+        background-color:rgb(43, 156, 119);
+        color:rgb(43, 32, 36);
+        text-align:center;
+        padding: 10px;
+    }
+    #nav{
+        background-color:rgb(114, 80, 110);
+        padding: 10px;
+    }
+    #main{
+        background-color: beige;
+        width: 90%;
+        margin:  0px auto;
+        padding: 15px;
+    }
+    a{
+        color:white;
+        margin: 2px;
+    }
+    p{
+        margin: 5px;
+    }
+</style>
 <body>
-    
-    <h1>Paige Leon</h1>
-    <hr>
+    <div id = "wrapper">
+        
+        <div id = "header" class = "bg">
+            <h1>Paige Leon</h1>
+            <h2>About Me</h2>
 
-    <div id="nav">
-        <a href="#bio">Bio</a>
-        <a href="#edu">Education</a>
-        <a href="#hobbies">Hobbies</a>
+        </div><!--/#header-->
+        
+        <div id = "nav">
+            <a href = index.html style = margin-right:40%;>Home</a>
+            <a href = hobbies.html style = margin-right:40%;>Hobbies</a>
+            <a href = schools.html>Schools</a>
+
+
+        </div><!--/#nav-->
+        
+        <div id = "main">
+            <p>Paige Leon lives in Providence RI with their partner Fern and three (3) cats: <u>Boris, Shavah, and Udon</u>.  Her mom is from Nebraska and her dad is from Peru, and she has two brothers and a sister.</p>
+            <p>In her free time she enjoys spending time in nature, cooking, and playing video and/or board games.</p>
+            <p>She has been programming in some capacity since she got a copy of Click and Play (a game design program from the 90s) from an older kid in the neighborhood and got the game design bug.  Since then they have worked with <b>JAVA, HTML/CSS, Python, Scheme, MatLab</b>, and probably others they can't remember right now.</p>
+            <p>The only animal products she eats are pasture raised eggs from small scale farms, a dietary restriction she has named v<i>egg</i>an.  She loves trying food from different cultures around the world.  Some of their favorites include Peruvian, Japanese, Ethiopian, and Persian</p>
+            <img src = "images/udon.jpg" alt = "An orange cat lying on top of an in home greenhouse. A tuxedo cat is watching him from a nearby cat tower" width = 33%>
+            <img src = "images/shavah.jpg" alt = "A grey cat resting on a couch between her human parents.  Her paw is resting on an ankle with the soot sprites from Spirited Away tattooed on it" width = 33%>
+            <img src = "images/boris.jpg" alt = "A black and white tuxedo cat sitting on the top of a couch.  He is next to a plush red river hog" width = 30%>
+
+            <img src = "images/me.jpg" alt = "A fem person with short green hair holding two cats, an orange one and a tuxedo one.  She is wearing a blue shirt with a bike on it that reads 'be dyke, ride bike'" width = 40%>
+            <img src = "images/fern.jpg" alt = "A nonbinary person crouching in a tunnel. The grafitti behind them reads 'vivan las lesbiana' [translation: long live lesbians]" width = 40%>
+        </div><!--/#main-->
+
+        <div id = "footer" class = "bg">
+            <a href = #header>Back to Top</a>
+        </div><!--/#footer-->
     </div>
-    <hr>
-
-
 </body>
 </html>

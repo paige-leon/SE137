@@ -1,0 +1,26 @@
+/*This is "required" in all external css files. It will work but wont validate*/
+@charset "UTF-8";
+
+.hide{
+    display: none;
+}
+
+header{
+    background-color: #8af593;
+}
+a{
+    display: inline-block;
+    padding: 20px;
+    border:1px solid black;
+}
+a:link, a:visited{
+   background-color: #ddd;
+   color:#db5000;
+}
+
+a:hover{
+    background-color: rgb(84, 84, 248)
+}
+a:active{
+    background-color: #8af593;
+}
