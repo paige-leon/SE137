@@ -3,6 +3,21 @@
 .flex{
     display: flex;
 }
+main{
+    background-color: rgb(40, 40, 40);
+}
 #banner{
     background-image: url("images/BANNER.png");
+}
+article{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: white;
+}
+.date{
+    color: rgb(255, 29, 41);
 }
