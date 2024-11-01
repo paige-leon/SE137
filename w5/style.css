@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.flex{
+    display: flex;
+}
+#banner{
+    background-image: url("images/BANNER.png");
+}
