@@ -25,6 +25,9 @@ i{
     color: rgb(187, 9, 8);
     font-size: 40px;
 }
+#shell{
+    display:grid;
+}
 #banner{
     background-image: url("images/BANNER.png");
 }
