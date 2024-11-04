@@ -1,0 +1,28 @@
+@charset "UTF-8";
+main{
+    display: flex;
+    width: 800px;
+    border: 1px red solid;
+    flex-direction: row; /*or column or reverse-row reverse-column*/
+    flex-wrap: wrap;
+    /* justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-evenly; */
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    height: 300px;
+    align-items: center;
+    align-items: baseline;
+    flex-direction: column;
+}
+div{
+    display:flex;
+    box-sizing: border-box;
+    border: 1px black solid;
+    /* width: 400px; */
+    /* margin: 20px; */
+}
+#bob{
+    font-size: 30px;
+}
