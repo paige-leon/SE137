@@ -4,12 +4,14 @@
     display: flex;
 }
 main{
+    
     background-color: rgb(40, 40, 40);
 }
 header{
     background-color: rgb(7, 7, 7);
     justify-content: space-between;
     align-items:end;
+    height: 100px;
 }
 h1{
     color: rgb(187, 9, 8);
@@ -21,15 +23,94 @@ h1{
     margin: 0;
     text-align: left;
 }
+h2{
+    color: rgb(255, 29, 41);
+    font-family: "Rock Salt";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+    
+}
 i{
     color: rgb(187, 9, 8);
     font-size: 40px;
 }
 #shell{
     display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    /* grid-template-rows: 388px 481px; */
+    grid-template-areas: 'banner banner banner banner right'
+                         'left left center center right';
+    gap: 20px;
+
 }
+
 #banner{
+    grid-area: banner;
+    min-height: 388px;
     background-image: url("images/BANNER.png");
+
+}
+#left, #center{
+    border-top: 5px rgb(187, 9, 8) solid;
+}
+#left, #center, #right{
+    background-color: rgb(57, 57, 57);
+}
+#left{
+    grid-area: left;
+}
+#lr{
+    padding: 21px;
+}
+h2 + p{
+    border-top: 4px rgb(187, 9, 8) solid;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+}
+a + p{
+    font-family: "Teko";
+    color:white;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 0px;
+    letter-spacing: 0%;
+    padding-bottom: 36px;
+    text-align: left;
+    margin: 0px;
+    border-bottom: 4px white solid;
+
+}
+#buy{
+    margin-left: 23px;
+    flex-direction:column;
+    justify-content:space-between;
+}
+#center{
+    grid-area: center;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+#right{
+    grid-area:right;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 18px;
+    align-content: center;
 }
 article{
     font-family: Roboto;
