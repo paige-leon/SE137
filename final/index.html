@@ -8,8 +8,8 @@
   
     <style>
         .red{
-            background-color: red;
-            color: white;
+            background-color: rgb(241, 241, 236);
+            color: rgb(51, 49, 49);
         }
         .white{
           color: white;
@@ -19,7 +19,13 @@
 
         }
         body{
-          background-color: beige;
+          background-color: rgb(68, 71, 69);
+        }
+        .dark-link{
+          color: rgb(51, 49, 49);
+        }
+        .link:hover{
+          color: rgb(179, 173, 173);
         }
 
     </style>
@@ -68,6 +74,7 @@
 
     <main class = "container p-4 red" style="height:100%;">
       <div class = "row">
+
         <!-- Featured project -->
         <div class="card col-lg-9 col-sm-12 py-2">
           <img src="images/udon.jpg" class="card-img-top" alt="...">
@@ -76,96 +83,50 @@
           </div>
         </div>
 
-          <!-- Author -->
+          <!-- Other Stuff -->
           <div class="col-sm-12 col-lg-3 container-sm">
+            
+            <!-- About Me -->
             <h2 class="text-center border-bottom">About Me</h2>
             <img src="images/udon.jpg" class="card-img-top" style="width: 100%;" alt="...">
             <div class="card-body">
-              <p class="card-text">This is the bio information about me and stuff</p>
+              <p class="card-text">Paige Leon (she/they) is a student at NEIT for computer programming.  She has been making games since grade school, learned JAVA in high school, and has been an avid programmer ever since.</p>
+            </div>
+
+            <!-- Repos -->
+            <div>
+              <h2 class = "text-center border-bottom pt-5">My Repos</h2>
+              <a href = https://github.com/paige-leon/SE137 target="_blank" class="dark-link link">CSS Class Repo</a><br>
+              <a href = https://github.com/paige-leon/SE137 target="_blank" class="dark-link link">A Fake Repo to fill space</a><br>
+              <a href = https://github.com/paige-leon/SE137 target="_blank" class="dark-link link">Another Fake One</a>
+            </div>
+            
+            <!-- Socials -->
+            <div class = "py-10">
+              <h2 class = "text-center border-bottom pt-5">Contact Me</h2>
+              <div class = "row fs-1">
+                <i class="fa-brands fa-instagram col-4"></i>
+                <i class="fa-brands fa-twitter col-4"></i>
+                <i class="fa-brands fa-linkedin col-4"></i>
+              </div>
+
             </div>
           </div>
-          <!-- <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">About Me</h5>
-                  <p class="card-text">This is the bio information about me and stuff</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div> -->
+
+
+
+
       </div>
     </main>
     <div class = "row">
-
-
-    
-    
-    <!-- Img -->
-    <!-- <img src="brothers.jpg" class = "col-12"> -->
-    
-    <!-- Main stuff -->
-    <!-- <main class = "container py-4">
-        <div class="container text-center py-4">
-            <div class="row g-lg-5 g-md-4 g-sm-3">
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="p-3 red row">
-                  <p class ="col-6">test</p>
-                  <p class = "col-6">t2</p>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="p-3 red">Custom column padding</div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="p-3 red">Custom column padding</div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="p-3 red">Custom column padding</div>
-              </div>
-            </div>
-          </div>
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Udon</td>
-                <td>Leon</td>
-                <td>@orangeking</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Boris</td>
-                <td>de la Noval</td>
-                <td>@tuxedochamp</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Shavah the Princess</td>
-                <td>@graygirlboss</td>
-              </tr>
-            </tbody>
-          </table>
-    </main> -->
     
     <!-- Footer -->
     <div class = "container-fluid bg-success text-center">
-      <a href="https://pixso.net/app/editor/POFKgpOTtvKzU1FFKsIWnQ?icon_type=1&page-id=0%3A1" class="link-underline-light white" target="_blank">See the Pixso</a>
+      <a href="https://pixso.net/app/editor/POFKgpOTtvKzU1FFKsIWnQ?icon_type=1&page-id=0%3A1" class="link-underline-light white link" target="_blank">See the Pixso</a>
     </div>
 
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/61a36f0003.js" crossorigin="anonymous"></script>
   </body>
 </html>
